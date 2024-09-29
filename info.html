@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menstrual Cycle Tracker</title>
+    <link rel="stylesheet" href="info.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Menstrual Cycle Tracker</h1>
+        <p class="description">Track your menstrual cycle and understand the changes in your body.</p>
+        <div class="button-group">
+            <button onclick="showCycle('pre-cycle')">Luteal Phase</button>
+            <button onclick="showCycle('during-cycle')">Menstrual Phase</button>
+            <button onclick="showCycle('post-cycle')">Follicular Phase</button>
+        </div>
+        
+        <div id="pre-cycle" class="cycle-info phase">
+            <h2>Luteal Phase (Days 15-28):</h2>
+            <p>Pre-menstrual phase (Days 20-28): Duration: 7 days</p>
+            <p>Progesterone levels increase</p>
+            <p>Uterine lining prepares for potential pregnancy</p>
+            <p>Breast tenderness, mood swings, cramping</p>
+            <p>Common Issues:</p>
+            <ul>
+                <li><i class="fas fa-heartbeat"></i> Mood swings</li>
+                <li><i class="fas fa-head-side-cough"></i> Bloating</li>
+                <li><i class="fas fa-pills"></i> Cravings</li>
+            </ul>
+        </div>
+
+        <div id="during-cycle" class="cycle-info phase" style="display:none;">
+            <h2>Menstrual Phase (Days 1-5)</h2>
+            <p>Duration: 5 days</p>
+            <p>Hormone levels drop</p>
+            <p>Common Issues:</p>
+            <ul>
+                <li><i class="fas fa-tired"></i> Fatigue</li>
+                <li><i class="fas fa-pain"></i> Cramps</li>
+                <li><i class="fas fa-frown"></i> Mood changes</li>
+            </ul>
+        </div>
+
+        <div id="post-cycle" class="cycle-info phase" style="display:none;">
+            <h2>Follicular Phase (Days 6-14)</h2>
+            <p>Duration: 9 days</p>
+            <p>Ovulation (Days 10-16, typically 14 days before next menstruation)</p>
+            <p>Estrogen levels increase</p>
+            <p>Uterine lining regeneration</p>
+            <p>Cervical mucus increases</p>
+            <p>Common Issues:</p>
+            <ul>
+                <li><i class="fas fa-smile"></i> Increased energy</li>
+                <li><i class="fas fa-leaf"></i> Better mood</li>
+                <li><i class="fas fa-microscope"></i> PMS symptoms</li>
+            </ul>
+        </div>
+
+        <p class="note">Understanding your cycle can help you manage symptoms better and improve your overall health.</p>
+    </div>
+
+    <script src="info.js"></script>
+</body>
+</html>
