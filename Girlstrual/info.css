@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(images/symptom-img7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    border: 2px solid #ff679c;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(5px); /* Blur effect */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    color: white;
+    width: 90%;
+    max-width: 600px; /* Limit max width for larger screens */
+}
+
+.description {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.button-group {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #ff679c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff4d8b;
+}
+
+.cycle-info {
+    display: none;
+    margin-top: 20px;
+}
+
+.cycle-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cycle-info li {
+    margin: 10px 0;
+}
+
+.note {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    button {
+        width: 100%;
+        margin: 10px 0; /* Stack buttons on smaller screens */
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .description {
+        font-size: 16px;
+    }
+    
+    .note {
+        font-size: 14px;
+    }
+}
